@@ -1,0 +1,33 @@
+NOTA FINAL
+var Nombre,Participacion, PrimerParcial,SegundoParcial, ExamenFinal,Nota;
+Nombre=prompt("Ingrese el nombre del estudiante");
+console.log("Nombre del estudiante es: " +Nombre);
+Participacion=parseFloat(prompt("Ingrese el porcentaje de participacion"));
+PrimerParcial=parseFloat(prompt("Ingrese el porcentaje del Primer Parcial"));
+SegundoParcial=parseFloat(prompt("Ingrese el porcentaje del Segundo Parcial"));
+ExamenFinal=parseFloat(prompt("Ingrese el porcentaje del Examen Final"));
+var SumaPorcentajes = Participacion + PrimerParcial + SegundoParcial + ExamenFinal;
+if (SumaPorcentajes !== 100)
+{
+ console.log("Error: La suma de los porcentajes debe ser 100%. Por favor, vuelva a ingresar los datos.");
+} 
+else 
+{
+Nota=Participacion+PrimerParcial+SegundoParcial+ExamenFinal;
+console.log("Nota Final : " + Nota);
+}
+
+SALARIOS
+var Nombre, CantidadHoras,SalarioHora,SalarioSemana,SalarioAnual,SalarioMes,SalarioDia;
+Nombre=prompt("Ingrese el nombre del empleado");
+console.log("Nombre del empleado: " +Nombre);
+CantidadHoras=parseInt(prompt("Ingrese la cantidad de horas laboradas por dia"));
+SalarioHora=parseInt(prompt("Ingrese el salario recibido por horas"));
+SalarioDia=CantidadHoras*SalarioHora;
+console.log("Salario Diario : " +SalarioDia);
+SalarioSemana=SalarioDia*5;
+console.log("Salario Semanal : " +SalarioSemana);
+SalarioMes=SalarioSemana*4;
+console.log("Salario Mensual : " +SalarioMes);
+SalarioAnual=SalarioMes*12;
+console.log("Salario Anual : " +SalarioAnual);
